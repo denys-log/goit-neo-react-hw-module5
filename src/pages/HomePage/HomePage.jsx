@@ -11,7 +11,7 @@ export default function HomePage() {
     <div>
       <h2>Trending today</h2>
       <QueryHandler isLoading={isLoading} isError={isError}>
-        <MovieList movies={data?.results} />
+        <MovieList movies={data?.results} state="/" />
       </QueryHandler>
     </div>
   );
