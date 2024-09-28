@@ -7,7 +7,7 @@ export default function MovieDetailsPage() {
   const { movieId } = useParams();
   const { data, isLoading, isError } = useQuery(`/movie/${movieId}`);
   const location = useLocation();
-  const [backLinkHref] = useState(location.state ?? '/');
+  const [backLinkHref] = useState(location.state ?? '/movies');
 
   return (
     <div>
